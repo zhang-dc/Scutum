@@ -47,5 +47,12 @@ module.exports = {
       .set('~$', resolve('src/common'))
       .set('index', resolve('src/views/index'))
       .set('admin', resolve('src/views/admin'))
+  },
+  css: {
+    loaderOptions: {
+      stylus: {
+        import: [path.resolve(__dirname, "src/common/style/theme")]
+      }
+    }
   }
 };
