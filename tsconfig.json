@@ -18,6 +18,15 @@
     "paths": {
       "@/*": [
         "src/*"
+      ],
+      "~/*": [
+        "src/common/*"
+      ],
+      "index/*": [
+        "src/view/index/*"
+      ],
+      "admin/*": [
+        "src/view/admin/*"
       ]
     },
     "lib": [
