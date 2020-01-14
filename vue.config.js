@@ -44,7 +44,7 @@ module.exports = {
   chainWebpack: (config)=>{
     config.resolve.alias
       .set('@$', resolve('src'))
-      .set('~$', resolve('src/common'))
+      .set('~', resolve('src/common'))
       .set('index', resolve('src/views/index'))
       .set('admin', resolve('src/views/admin'))
   },
