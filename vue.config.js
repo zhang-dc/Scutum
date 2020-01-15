@@ -54,5 +54,8 @@ module.exports = {
         import: [path.resolve(__dirname, "src/common/style/theme")]
       }
     }
-  }
-};
+  },
+  transpileDependencies: [
+    "vuetify"
+  ]
+}
