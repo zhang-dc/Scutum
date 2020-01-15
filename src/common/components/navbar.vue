@@ -1,6 +1,7 @@
 <template lang="pug">
 div.navbar-container
-  img.logo(:src="require('@/assets/scutum.svg')")
+  a(href="/#/")
+    img.logo(:src="require('@/assets/scutum.svg')")
   div.nav
     router-link.links(:class="{active: current == index}"
                       v-for="(tab,index) in tabs"
@@ -66,6 +67,7 @@ $link-font-size = 16px
   background $background-color
   color $primary-dark
   font-size $link-font-size
+  user-select none
   .logo
     font-size $logo-font-size
     display block

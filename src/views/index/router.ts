@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from './index.vue'
 import Welcome from './pages/welcome.vue'
+import Login from './pages/Login/login.vue'
 
 Vue.use(Router)
 
@@ -12,7 +12,8 @@ export default new Router({
       component: Welcome,
     },
     {
-      path: '/challenge',
+      path: '/login',
+      component: Login,
     },
   ],
 })

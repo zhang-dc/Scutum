@@ -1,11 +1,17 @@
 import Vue from 'vue'
 import Vuetify, {
+  VApp,
   VInput,
+  VTextField,
+  VBtn,
 } from 'vuetify/lib'
 
 Vue.use(Vuetify, {
   components: {
+    VApp,
     VInput,
+    VTextField,
+    VBtn,
   },
 })
 
@@ -14,13 +20,14 @@ export default new Vuetify({
     themes: {
       light: {
         primary: '#4181a1',
-        secondary: '#424242',
-        accent: '#82B1FF',
-        error: '#FF5252',
-        info: '#2196F3',
-        success: '#4CAF50',
-        warning: '#FFC107',
+        secondary: '#86c1e0',
+        accent: '#554475',
+        error: '#d1534f',
+        info: '#fee0a1',
+        success: '#6cb77e',
+        warning: '#f08264',
       },
     },
   },
+  rtl: false,
 })
