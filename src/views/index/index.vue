@@ -1,5 +1,5 @@
 <template lang="pug">
-  div#app
+  VApp#app
     NavBar(:tabs="tabs")
     router-view
 </template>
@@ -34,7 +34,7 @@ export default class Index extends Vue {
         url: '/contest/',
       },
     ]
-    if(this.$store.state.user) {
+    if (this.$store.state.user) {
       this.tabs.splice(1, 0, {
         name: 'Profile',
         url: `/user/${this.$store.state.user}`,
@@ -45,11 +45,14 @@ export default class Index extends Vue {
 </script>
 
 <style lang="stylus">
+html
+  overflow-y auto!important
 body
   margin 0
 p
   margin 0
 #app
+  width 100vw
   font-family "Helvetica Neue",Helvetica,Arial,sans-serif,"Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale

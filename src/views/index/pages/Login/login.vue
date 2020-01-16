@@ -1,5 +1,5 @@
 <template lang="pug">
-VApp.login-container
+div.login-container
   form.form
     div Login
     VTextField(color="primary" label="User" hint="Input username or Email")

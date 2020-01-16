@@ -54,14 +54,14 @@ export default class NavBar extends Vue {
 </script>
 
 <style lang="stylus" scoped>
-$navbar-padding = 12px
+$navbar-padding = 16px
 $logo-font-size = 36px
 $link-font-size = 16px
 .navbar-container
   display flex
   align-items center
   position relative
-  width calc(100vw - $navbar-padding * 2)
+  // width calc(100vw - $navbar-padding * 2)
   height 72px
   padding 0 $navbar-padding
   background $background-color

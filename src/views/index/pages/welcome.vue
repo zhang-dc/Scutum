@@ -1,7 +1,6 @@
 <template lang="pug">
 div.welcome-container
-  a(href="/")
-    img.logo(:src="require('@/assets/scutum.svg')")
+  img.logo(:src="require('@/assets/scutum.svg')")
   p Welcome to Scutum!
   p This is a docker based network security contest platform providing CTF & AWD challenges.
 </template>
