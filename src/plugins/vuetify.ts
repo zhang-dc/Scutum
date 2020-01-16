@@ -4,6 +4,7 @@ import Vuetify, {
   VInput,
   VTextField,
   VBtn,
+  VIcon,
 } from 'vuetify/lib'
 
 Vue.use(Vuetify, {
@@ -12,6 +13,7 @@ Vue.use(Vuetify, {
     VInput,
     VTextField,
     VBtn,
+    VIcon,
   },
 })
 
