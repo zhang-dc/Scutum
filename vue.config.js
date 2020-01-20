@@ -40,6 +40,12 @@ module.exports = {
     index: '/index', 
     host: '0.0.0.0',
     port: 8081,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8086',
+        pathRewrite: {'^/api' : ''}
+      }
+    }
   },
   chainWebpack: (config)=>{
     config.resolve.alias
