@@ -16,7 +16,7 @@ div.navbar-container
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import { User } from '~/models/user'
+import User from '~/models/user'
 
 
 class NavBarTab {
