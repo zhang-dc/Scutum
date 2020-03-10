@@ -1,10 +1,12 @@
 import Vue from 'vue'
-import Login from './index.vue'
+import Index from './index.vue'
 import router from './router'
 import store from './store'
+import vuetify from '@/plugins/vuetify'
 
 new Vue({
     router,
     store,
-    render: (h) => h(Login),
+    vuetify,
+    render: (h) => h(Index),
   }).$mount('#app')
