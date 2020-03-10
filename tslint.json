@@ -17,6 +17,10 @@
     "quotemark": [true, "single"],
     "semicolon": [true, "never"],
     "max-classes-per-file": [true, 5, "exclude-class-expressions"],
-    "only-arrow-functions": false
+    "only-arrow-functions": false,
+    "variable-name": [
+      true,
+      "allow-leading-underscore"
+    ]
   }
 }
