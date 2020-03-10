@@ -1,5 +1,5 @@
 function limitLength(min: number, max: number): (str: string) => boolean {
-  return function(str: string) {
+  return (str: string) => {
     return !!str && str.length >= min && str.length <= max
   }
 }
