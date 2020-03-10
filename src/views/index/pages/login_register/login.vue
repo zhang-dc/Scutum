@@ -3,13 +3,15 @@
     div.page Login
     VTextField(label="User"
                 hint="Input username or email"
+                prepend-icon="mdi-account"
                 v-model="usernameOrEmail"
-                :rules="[rules.required]")
+                :rules="[rules.requireUser]")
     VTextField(label="Password"
                 hint="Input password"
+                prepend-icon="mdi-lock"
                 v-model="password"
                 :type="showPassword ? 'text' : 'password'"
-                :rules="[rules.required]"
+                :rules="[rules.requirePassword]"
                 :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
                 @click:append="showPassword = !showPassword")
     div.buttons
@@ -25,11 +27,12 @@ import { required } from '~/util/validators'
   components: { Base },
 })
 export default class Login extends Vue {
-  usernameOrEmail: string = ''
-  password: string = ''
-  showPassword: boolean = false
-  rules: any = {
-    required: (value: string) => required(value) || 'This field is required.',
+  private usernameOrEmail: string = ''
+  private password: string = ''
+  private showPassword: boolean = false
+  private rules: any = {
+    requireUser: (value: string) => required(value) || 'Username or email cannot be empty.',
+    requirePassword: (value: string) => required(value) || 'Password cannot be empty.',
   }
   constructor() {
     super()

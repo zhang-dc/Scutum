@@ -10,7 +10,7 @@ import { Component, Vue } from 'vue-property-decorator'
   components: {},
 })
 export default class Base extends Vue {
-    
+
 }
 </script>
 

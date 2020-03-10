@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { User, UserMutation, UserAction } from '~/models/user'
+import User from '~/models/user'
 
 Vue.use(Vuex)
 
