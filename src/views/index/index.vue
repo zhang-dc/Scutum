@@ -1,7 +1,7 @@
 <template lang="pug">
   VApp#app
     NavBar(:tabs="tabs")
-    router-view
+    router-view#view
 </template>
 
 <script lang="ts">
@@ -57,4 +57,6 @@ p
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   text-align center
+#view, #view div
+  background #fafafa
 </style>
